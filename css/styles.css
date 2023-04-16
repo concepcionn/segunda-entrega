@@ -1,0 +1,404 @@
+/*reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos generales */
+
+html {
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background-color: rgb(126, 126, 141);
+}
+
+.colorTitle {
+    color: rgb(1, 1, 63);
+    text-shadow: #222;
+
+}
+
+.colorMenu {
+    color: rgb(1, 1, 63);
+}
+
+.colorMenu:hover {
+    border-bottom: 2px solid rgb(1, 1, 63);
+    color: rgb(1, 1, 63);
+}
+
+h1 {
+    color: rgb(1, 1, 63);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+    color: rgb(1, 1, 63);
+}
+
+footer div a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* estilos del index */
+
+.descripcion {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 50vh;
+    background: url(../img/martillo.jpg) center;
+    background-size: cover;
+}
+
+.descripcion h2 {
+    font-size: 1.1rem;
+    text-align: center;
+    justify-content: center;
+    color: rgb(145, 153, 160);
+    padding: 2em;
+    border: 1px solid rgb(145, 153, 160);
+    box-shadow: 0 0 10px #222;
+    backdrop-filter: blur(15px);
+    margin: 5rem;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 33%);
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+section .compromiso h3 {
+    text-decoration: overline;
+    text-shadow: 10px #222;
+    text-align: left;
+}
+
+section .visionValores h3 {
+    text-transform: uppercase;
+    text-align: right;
+}
+
+section .compromiso {
+    background-color: rgb(87, 87, 163);
+    height: 300px;
+    padding: 3em;
+    gap: 20px;
+    font-size: 1em;
+    text-align: center;
+    justify-content: center;
+}
+
+section .compromiso p {
+    text-align: justify;
+    text-decoration: dashed;
+}
+
+section .imgDos {
+    display: none;
+}
+
+section .visionValores {
+    background-color: rgb(129, 129, 230);
+    padding: 2em;
+    gap: 20px;
+    font-size: 1em;
+    text-align: center;
+    justify-content: center;
+}
+
+section .visionValores p {
+    text-align: justify;
+}
+
+
+
+/* estilos de areas */
+
+.areas {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.areas h1 {
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.areas h4 {
+    color: rgb(13, 13, 58);
+    padding: 15px;
+    margin: 15px;
+    text-decoration: dotted overline;
+}
+
+.areas p {
+    display: none;
+}
+
+/* estilos de staff */
+
+.socios h2 {
+    text-align: left;
+    margin-bottom: 40px;
+    color: rgb(1, 1, 63);
+    text-decoration: overline;
+}
+
+.socios {
+    text-align: center;
+    padding: 40px;
+    color: rgb(43, 43, 121);
+}
+
+.socios .cuadro {
+    border-style: double;
+    margin: 20px;
+    padding: 20px;
+}
+
+.socios .cuadro img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.socios h3 {
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.socios p {
+    text-align: justify;
+}
+
+/* estilos para revista */
+
+.revista {
+    color: rgb(50, 50, 161);
+    margin: 0.3rem;
+    padding: 0.3rem;
+}
+
+.revista h2 {
+    text-decoration: overline;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+
+.pagInteres {
+    color: rgb(78, 78, 185);
+    padding: 0.8rem;
+    display: inline-block;
+}
+
+.pagInteres h4 {
+    text-decoration: overline;
+}
+
+.pagInteres div a {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    color: black;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+/* estilos para contacto */
+
+.contacto {
+    text-align: center;
+}
+
+.contacto h2 {
+    text-align: left;
+    color: rgb(1, 1, 63);
+    text-decoration: dotted underline;
+    text-transform: uppercase;
+    margin: 1rem;
+    
+}
+
+.contacto form{
+    margin-top: 2rem;
+}
+
+.formulario div label {
+    color: whitesmoke;
+}
+
+.formulario input {
+    width: 25rem;
+    height: 2rem;
+}
+
+.formulario div label {
+    display: block;
+}
+
+#consulta {
+    height: 20rem;
+}
+
+
+/* mq para tablests*/
+
+@media screen and (min-width:600px){
+    /* estilos de index */
+    .descripcion h2{
+        margin: 6.5rem;
+    }
+
+    section{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 40%);
+    }
+    .compromiso {
+        grid-column: span 2;
+    }
+
+    .visionValores {
+        grid-column: span 1;
+    }
+
+    section .imgDos {
+        display: inline-block;
+        grid-column: span 1;
+        text-align: center;
+    }
+
+    section .imgDos img{
+        width: 80%;
+        height: 80%;
+    }
+
+    /*estilos de areas*/
+
+    .areas h4 {
+        text-align: right;
+    }
+
+    .areas p {
+        display: inline-block;
+    }
+
+    /* estilos de staff */
+
+    .socios .cuadro{
+        display: flex;
+        flex-wrap: no-wrap;
+        gap: 1em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .socios .cuadro div{
+        text-align: left;
+    }
+
+    /*estilos de revista*/ 
+    
+    .revista .captionColor{
+        color: white;
+        text-decoration: solid;
+        border: 1px solid rgb(145, 153, 160);
+        box-shadow: 0 0 10px #222;
+        backdrop-filter: blur(15px);
+    }
+
+    .pagInteres div a:visited{
+        color: aliceblue;
+    }
+    
+    /* estilos de contacto*/
+
+    .formulario input{
+        width: 30rem;
+        height: 3rem;
+    }
+}
+
+/* mq para pantallas de escritorio*/ 
+
+@media screen and (min-width:1024px){
+    
+    /* estilos del index */
+    .descripcion{
+        height: 60vh;
+        
+    }
+
+    .descripcion h2{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin: 7rem;
+        
+    }
+
+    .descripcion h2 span{
+        display: block;
+    }
+
+    section{
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 30% 65%;
+        margin-top: 1rem;
+        
+    }
+    section .compromiso {
+        margin-top: 1rem;
+        font-size: 1.2em;
+    }
+
+    .visionValores p{
+        font-size: 1.2em;
+    }
+
+    /* estilos de areas*/
+
+    .areas h1{
+        margin: 1rem;
+    }
+
+    .areas h4{
+        text-decoration: none;
+    }
+
+    .areas p{
+        text-align: left;
+    }
+
+    .areas div{
+        border-bottom: 2px dotted #222;
+        margin: 1rem;
+    }
+
+   /* estilos de revista */
+   .pagInteres div a:hover{
+        font-weight: bold;
+    }
+
+    .pagInteres div a:visited{
+        color: aliceblue;
+    }
+
+    /* estilos de contacto */
+    .formulario input{
+        width: 40rem;
+        height: 3rem;
+    }
+}
