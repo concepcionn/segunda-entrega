@@ -93,7 +93,7 @@ section .visionValores h3 {
 
 section .compromiso {
     background-color: rgb(87, 87, 163);
-    height: 300px;
+    height: 350px;
     padding: 3em;
     gap: 20px;
     font-size: 1em;
@@ -104,6 +104,7 @@ section .compromiso {
 section .compromiso p {
     text-align: justify;
     text-decoration: dashed;
+    margin-bottom: 30px;
 }
 
 section .imgDos {
@@ -160,14 +161,14 @@ section .visionValores p {
 
 .socios {
     text-align: center;
-    padding: 40px;
+    padding: 30px;
     color: rgb(43, 43, 121);
 }
 
 .socios .cuadro {
     border-style: double;
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
 }
 
 .socios .cuadro img{
@@ -218,6 +219,10 @@ section .visionValores p {
     margin-top: 20px;
 }
 
+.pagInteres div a:visited{
+    color: aliceblue;
+}
+
 /* estilos para contacto */
 
 .contacto {
@@ -242,7 +247,7 @@ section .visionValores p {
 }
 
 .formulario input {
-    width: 25rem;
+    width: 15rem;
     height: 2rem;
 }
 
@@ -318,10 +323,6 @@ section .visionValores p {
         border: 1px solid rgb(145, 153, 160);
         box-shadow: 0 0 10px #222;
         backdrop-filter: blur(15px);
-    }
-
-    .pagInteres div a:visited{
-        color: aliceblue;
     }
     
     /* estilos de contacto*/
